@@ -1,0 +1,10 @@
+
+2025-01-08 16:48:22 - Temperature: 5°C
+2025-01-08 16:48:23 - Temperature: 18°C
+2025-01-08 16:48:24 - Temperature: -6°C
+2025-01-08 16:48:25 - Temperature: 9°C
+2025-01-08 16:48:26 - Temperature: -6°C
+2025-01-08 16:48:27 - Temperature: -6°C
+2025-01-08 16:48:28 - Temperature: -5°C
+2025-01-08 16:48:29 - Temperature: 18°C
+2025-01-08 16:48:30 - Temperature: 1°C
