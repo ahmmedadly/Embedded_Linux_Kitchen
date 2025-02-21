@@ -155,6 +155,28 @@ This ensures -->
 1. **Start the build process** for the minimal image (`core-image-minimal`): 
    ```bash
    bitbake core-image-minimal -k
+   
+###if you want to do a singl task not all the build tasks which are 
+   *****
+   Here’s a general  order for BitBake tasks: 
+1. **`do_fetch`** → Downloads source code. 
+2. **`do_unpack`** → Extracts the downloaded sources. 
+3. **`do_patch`** → Applies patches to the source. 
+4. **`do_configure`** → Configures the source for building. 
+5. **`do_compile`** → Compiles the source code. 
+6. **`do_install`** → Installs compiled files into a temporary destination. 
+7. **`do_package`** → Prepares packaged output files. 
+8. **`do_rootfs`** → Creates the root filesystem (for images). 
+9. **`do_image`** → Generates the final image (for images). 
+
+Each task depends on the previous ones. For example, `do_compile` won’t work unless `do_fetch`, `do_unpack`, `do_patch`, and `do_configure` are done first. 
+so you have to make sure that u already done the task before 
+******
+    if u want to download the source codes which is the first task then build the img in your home, you can run 
+   ****************************************************
+          bitbake core-image-minimal --runonly=fetch   * 
+   ****************************************************
+    then you can run ```bitbake core-image-minimal -k ```
    ``` 
    The `-k` flag ensures that the build continues even if some tasks fail. 
 
